@@ -1,0 +1,4 @@
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\MDCSharpClient\bin\Debug\MDCSharpClient.dll
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\MDCSharpClient\bin\Debug\MDCSharpClient.pdb
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\MDCSharpClient\obj\Debug\MDCSharpClient.dll
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\MDCSharpClient\obj\Debug\MDCSharpClient.pdb

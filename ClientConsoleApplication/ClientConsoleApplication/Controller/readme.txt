@@ -1,0 +1,1 @@
+﻿1.继承自ControllerBase的类必须以Controller结尾！

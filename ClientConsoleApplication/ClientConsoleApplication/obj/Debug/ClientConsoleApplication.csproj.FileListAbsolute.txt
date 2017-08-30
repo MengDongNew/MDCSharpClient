@@ -1,0 +1,8 @@
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\ClientConsoleApplication.exe.config
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\ClientConsoleApplication.exe
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\ClientConsoleApplication.pdb
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\MDCSharpClient.dll
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\MDCSharpClient.pdb
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\ClientConsoleApplication\obj\Debug\ClientConsoleApplication.csprojResolveAssemblyReference.cache
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\ClientConsoleApplication\obj\Debug\ClientConsoleApplication.exe
+C:\Users\mengdong\Documents\workspace\Demo\ClientConsoleApplication\ClientConsoleApplication\obj\Debug\ClientConsoleApplication.pdb

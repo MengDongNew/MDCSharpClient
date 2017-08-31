@@ -532,8 +532,13 @@ namespace MDCSharpClient
                 _receiveByte64K.DelBytes((ushort)len);
                 //ServerPacket serPkt = ServerPacket.Create(bytes64k);
                 //App_Event.HandleEvent(serPkt);
-                if(Peer.PeerListener != null)
-                    Peer.PeerListener.OnOperationResponse(OperationResponseTool.CreateOperationResponse(bytes64k));
+                if (Peer.PeerListener != null)
+                {
+                    ServerPacket serverPacket = ServerPacket.Create(bytes64k);
+                    PeerTool.DistributePeer(serverPacket, Peer);
+                    
+                }
+                    
             }
         }
 

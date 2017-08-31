@@ -19,7 +19,10 @@ namespace ClientConsoleApplication.Controller
         {
             ClientEngine.Instance.UnRegistController(OpCode);
         }
-
+        public virtual void OnEvent(EventData eventData)
+        {
+           
+        }
         public abstract byte OpCode { get; }
         public abstract void OnOperationResponse(OperationResponse operationResponse);
 

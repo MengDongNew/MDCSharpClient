@@ -92,7 +92,16 @@ namespace ClientConsoleApplication
 
         public void OnEvent(EventData eventData)
         {
-            Log("OnEvent:");
+            Log("OnEvent:"+eventData.Code);
+            ControllerBase controller;
+            if (controllers.TryGetValue(eventData.Code, out controller))
+            {
+                controller.OnEvent(eventData);
+            }
+            else
+            {
+                Log("Reveive a unkonwn eventData. EventCode ："+ eventData.Code);
+            }
         }
 
         public void OnOperationResponse(OperationResponse operationResponse)

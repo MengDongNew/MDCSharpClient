@@ -21,6 +21,16 @@ namespace ClientConsoleApplication.Controller
         public override byte OpCode {
             get { return (byte) OperationCode.ServerList; }
         }
+
+        public override void OnEvent(EventData eventData)
+        {
+            Log("OnEvent: eventData.Code="+eventData.Code);
+            foreach (var parameter in eventData.Parameters)
+            {
+                Log(parameter.Key + ":" + parameter.Value.ToString());
+            }
+        }
+
         public override void OnOperationResponse(OperationResponse operationResponse)
         {
             Log("OnOperationResponse=" + operationResponse.OperationCode+" ReturnCode="+operationResponse.ReturnCode);

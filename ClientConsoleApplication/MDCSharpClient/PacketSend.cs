@@ -6,10 +6,26 @@ using System.Threading.Tasks;
 
 namespace MDCSharpClient
 {
+    /// <summary>
+    ///                  |--------------------------客户端发送数据--------|
+    ///                  |--------------------------Length-----------|
+    ///                  |---2B:Length---|---1B:OperationCode---|--Data---|
     public class PacketSend
     {
         public ArrByte64K _arrByte64K;
-        private ushort _i = 4;// 8 个字节 
+        private ushort _i = 3;// 3 个字节开始存储数据 
+        
+        private PacketSend()
+        {
+            _arrByte64K = new ArrByte64K();
+
+        }
+        public static PacketSend Create(ushort operationCode)
+        {
+            var pk = new PacketSend();
+            pk._arrByte64K.arrByte64K[3] = (byte)(operationCode);//第3位存储operationCode
+            return pk;
+        }
 
         public PacketSend Write(ushort v)
         {
@@ -54,20 +70,7 @@ namespace MDCSharpClient
             _i += (ushort)length;
             return this;
         }
-        private PacketSend()
-        {
-            _arrByte64K = new ArrByte64K();
 
-        }
-        public static PacketSend Create(ushort operationCode)
-        {
-            var pk = new PacketSend();
-            //pk._arrByte64K.arrByte64K[0] = (byte)(15 >> 8);
-            //pk._arrByte64K.arrByte64K[1] = (byte)(15);//第1、2位存储id
-            pk._arrByte64K.arrByte64K[2] = (byte)((ushort)operationCode >> 8);
-            pk._arrByte64K.arrByte64K[3] = (byte)((ushort)operationCode);//第3、4位存储id
-            return pk;
-        }
 
         public PacketSend Write(bool v)
         {

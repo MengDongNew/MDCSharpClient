@@ -9,7 +9,7 @@ namespace MDCSharpClient
     /// <summary>
     ///                  |--------------------------客户端数据--------|
     ///                  |--------------------------Length-----------|
-    ///|----4B:ConnId----|---2B:Length---|----2B:OperationCode---|---2B:ReturnCode---|--Data---|
+    ///|----4B:ConnId----|---2B:Length---|---1B:CodeType---|----1B:Code---|---2B:ReturnCode---|--Data---|
     /// </summary>
     public class ArrByteReader
     {

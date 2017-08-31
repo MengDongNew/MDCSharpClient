@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace MDCSharpClient
 {
+
     public class ServerPacket
     {
+        public enum CodeType
+        {
+            OperationCode,
+            EventCode,
+        }
+
         public bool err;
-        public ushort OperationCode { get; set; }
+        public CodeType CType { get; set; }
+        public byte Code { get; set; }
+       
         public short ReturnCode { get; set; }
         public ushort len;
         public byte state;
@@ -23,16 +32,12 @@ namespace MDCSharpClient
         {
             arrByteReader = new ArrByteReader();
             arrByteReader.SetArrByte(arrByte64K);
-            len = arrByteReader.ReaduShort();//(ushort)(arrByte64K.arrByte64K[0] * 256 + arrByte64K.arrByte64K[1]);
-            OperationCode = arrByteReader.ReaduShort();//(ushort)(arrByte64K.arrByte64K[2] * 256 + arrByte64K.arrByte64K[3]);
+            len = arrByteReader.ReaduShort();
+            CType = (CodeType)arrByteReader.ReadByte();
+            Code = arrByteReader.ReadByte();
             ReturnCode = arrByteReader.ReadShort();
-            Console.WriteLine("length　=　{0}, eventId = {1}", len, OperationCode);
-            
-            //arrByteReader = new ArrByteReader();
-            //len = (ushort)(arrByte64K.arrByte64K[0] * 256 + arrByte64K.arrByte64K[1]);
-            //OperationCode = (ushort)(arrByte64K.arrByte64K[2] * 256 + arrByte64K.arrByte64K[3]);
-            //Console.WriteLine("length　=　{0}, eventId = {1}", len, OperationCode);
-            //arrByteReader.SetArrByte(arrByte64K);
+            Console.WriteLine("length　=　{0},CodeType={1} Code = {2}", len, CType, Code);
+
         }
     }
 }

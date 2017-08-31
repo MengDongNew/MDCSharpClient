@@ -20,10 +20,10 @@ namespace MDCSharpClient
             _arrByte64K = new ArrByte64K();
 
         }
-        public static PacketSend Create(ushort operationCode)
+        public static PacketSend Create(byte operationCode)
         {
             var pk = new PacketSend();
-            pk._arrByte64K.arrByte64K[3] = (byte)(operationCode);//第3位存储operationCode
+            pk._arrByte64K.arrByte64K[2] = (byte)(operationCode);//第2位存储operationCode
             return pk;
         }
 

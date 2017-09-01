@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common;
 using MDCSharpClient;
 
 namespace ClientConsoleApplication.Controller
@@ -19,7 +20,7 @@ namespace ClientConsoleApplication.Controller
             instance = this;
         }
         public override byte OpCode {
-            get { return (byte) OperationCode.ServerList; }
+            get { return (byte) OperationCode.Server; }
         }
 
         public override void OnEvent(EventData eventData)
@@ -45,7 +46,7 @@ namespace ClientConsoleApplication.Controller
         {
             Dictionary<byte,object> parameters = new Dictionary<byte, object>();
             parameters.Add(10,"Hello 我是客户端！");
-            ClientEngine.Instance.SendRequest((byte)OperationCode.ServerList, parameters);
+            ClientEngine.Instance.SendRequest((byte)OperationCode.Server, parameters);
         }
 
         void Log(string s)

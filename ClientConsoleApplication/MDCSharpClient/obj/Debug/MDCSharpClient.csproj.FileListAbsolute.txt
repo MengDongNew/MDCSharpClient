@@ -7,3 +7,9 @@ C:\Users\mengdong\Documents\GitHub\MDCSharpClient\ClientConsoleApplication\MDCSh
 C:\Users\mengdong\Documents\GitHub\MDCSharpClient\ClientConsoleApplication\MDCSharpClient\obj\Debug\MDCSharpClient.csprojResolveAssemblyReference.cache
 C:\Users\mengdong\Documents\GitHub\MDCSharpClient\ClientConsoleApplication\MDCSharpClient\obj\Debug\MDCSharpClient.dll
 C:\Users\mengdong\Documents\GitHub\MDCSharpClient\ClientConsoleApplication\MDCSharpClient\obj\Debug\MDCSharpClient.pdb
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\MDCSharpClient\bin\Debug\MDCSharpClient.dll
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\MDCSharpClient\bin\Debug\MDCSharpClient.pdb
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\MDCSharpClient\obj\Debug\MDCSharpClient.csprojResolveAssemblyReference.cache
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\MDCSharpClient\obj\Debug\MDCSharpClient.csproj.CoreCompileInputs.cache
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\MDCSharpClient\obj\Debug\MDCSharpClient.dll
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\MDCSharpClient\obj\Debug\MDCSharpClient.pdb

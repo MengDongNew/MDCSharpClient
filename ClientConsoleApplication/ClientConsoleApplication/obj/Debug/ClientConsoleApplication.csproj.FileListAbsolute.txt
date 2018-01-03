@@ -15,3 +15,13 @@ C:\Users\mengdong\Documents\GitHub\MDCSharpClient\ClientConsoleApplication\Clien
 C:\Users\mengdong\Documents\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\MDCSharpClient.pdb
 C:\Users\mengdong\Documents\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\obj\Debug\ClientConsoleApplication.csprojResolveAssemblyReference.cache
 C:\Users\mengdong\Documents\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\Common.dll
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\ClientConsoleApplication.exe.config
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\ClientConsoleApplication.exe
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\ClientConsoleApplication.pdb
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\Common.dll
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\MDCSharpClient.dll
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\MDCSharpClient.pdb
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\obj\Debug\ClientConsoleApplication.csprojResolveAssemblyReference.cache
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\obj\Debug\ClientConsoleApplication.csproj.CoreCompileInputs.cache
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\obj\Debug\ClientConsoleApplication.exe
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\obj\Debug\ClientConsoleApplication.pdb

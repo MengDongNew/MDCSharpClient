@@ -32,7 +32,7 @@ namespace ClientConsoleApplication
             controllers = new Dictionary<byte, ControllerBase>();
             instance = this;
             peer = new ClientPeer(this);
-            peer.Connect("127.0.0.1", "26680");
+            peer.Connect("192.168.1.20", "26680");
             RegisterAllController();
             
         }

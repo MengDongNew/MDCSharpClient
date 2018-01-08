@@ -46,6 +46,7 @@ namespace ClientConsoleApplication.Controller
         {
             Dictionary<byte,object> parameters = new Dictionary<byte, object>();
             parameters.Add(10,"Hello 我是客户端！");
+            parameters.Add(11,1111);
             ClientEngine.Instance.SendRequest((byte)OperationCode.Server, parameters);
         }
 

@@ -1,0 +1,1 @@
+﻿1.支持传输类型:string，byte，int,uint,short,ushort,long,ulong,enum(只能是int)

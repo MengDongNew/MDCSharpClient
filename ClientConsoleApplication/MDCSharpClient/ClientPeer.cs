@@ -48,7 +48,64 @@ namespace MDCSharpClient
             foreach (var parameter in customOpParameters)
             {
                 pk.Write((byte) parameter.Key);
-                pk.Write((string) parameter.Value);
+
+                //添加value的值类型，如int，byte，string，等
+                if (parameter.Value.GetType() == typeof(byte))
+                {
+                    pk.Write((byte)ValueType.Byte);
+                    pk.Write((byte)parameter.Value);
+                }
+                else if (parameter.Value.GetType() == typeof(string))
+                {
+                    pk.Write((byte)ValueType.String);
+                    pk.Write((string)parameter.Value);
+                }
+                else if(parameter.Value.GetType().IsEnum) {
+                    pk.Write((byte)ValueType.EnumInt);
+                    pk.Write((int)parameter.Value);
+                }
+                else if (parameter.Value.GetType() == typeof(sbyte))
+                {
+                    pk.Write((byte)ValueType.SByte);
+                    pk.Write((sbyte)parameter.Value);
+                }
+                else if (parameter.Value.GetType() == typeof(bool))
+                {
+                    pk.Write((byte)ValueType.Boolean);
+                    pk.Write((bool)parameter.Value);
+                }
+                else if (parameter.Value.GetType() == typeof(short))
+                {
+                    pk.Write((byte)ValueType.Int16);
+                    pk.Write((short)parameter.Value);
+                }
+                else if (parameter.Value.GetType() == typeof(int))
+                {
+                    pk.Write((byte)ValueType.Int32);
+                    pk.Write((int)parameter.Value);
+                }
+                else if (parameter.Value.GetType() == typeof(long))
+                {
+                    pk.Write((byte)ValueType.Int64);
+                    pk.Write((long)parameter.Value);
+                }
+                else if (parameter.Value.GetType() == typeof(ushort))
+                {
+                    pk.Write((byte)ValueType.UInt16);
+                    pk.Write((ushort)parameter.Value);
+                }
+                else if (parameter.Value.GetType() == typeof(uint))
+                {
+                    pk.Write((byte)ValueType.UInt32);
+                    pk.Write((uint)parameter.Value);
+                }
+                else if (parameter.Value.GetType() == typeof(ulong))
+                {
+                    pk.Write((byte)ValueType.UInt64);
+                    pk.Write((ulong)parameter.Value);
+                }
+               
+
             }
             asynchronousClient.EnqueuePacketSend(pk.ExportArrByte64K());
             return true;

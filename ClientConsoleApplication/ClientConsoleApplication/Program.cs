@@ -26,7 +26,8 @@ namespace ClientConsoleApplication
 
         private static void Engine_OnConnectToServer()
         {
-            ServerListController.Instance.RequestServerList();
+            //ServerListController.Instance.RequestServerList();
+            AccountController.Instance.Login(new Common.Modal.User() { Accesstoken="1001",Password="1001"});
         }
 
         static void ThreadTimer()

@@ -25,3 +25,4 @@ F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\obj\D
 F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\obj\Debug\ClientConsoleApplication.csproj.CoreCompileInputs.cache
 F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\obj\Debug\ClientConsoleApplication.exe
 F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\obj\Debug\ClientConsoleApplication.pdb
+F:\GitHub\MDCSharpClient\ClientConsoleApplication\ClientConsoleApplication\bin\Debug\LitJSON.dll
